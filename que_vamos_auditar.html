@@ -3,14 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Como vamos a auditar?</title>
+    <title>¿Que vamos a auditar?</title>
 </head>
 <body>
-    <a href="index.html" id="volver">Volver</a>
-    <h1>¿Que vamos a auditar?</h1>
-    <p>Hay que tener en cuenta que la auditoria tiene como sinonimo el <strong>Verificar y Evaluar</strong>, es decir durante nuestro proceso de auditoria vamos a verificar y evaluar la empresa pero especificamente ¿que es lo que vamos a verificar y evaluar? </p>
 
-    <h2>Las areas auditables</h2>
-    <p>Para determinar cuales son las areas auditables, primero tenemos que visualizar la <a href="empresa.html">empresa</a> como un todo desde una perspectiva de sistemas, entendiendo ¿que es lo que hace?  ¿como lo hace?  y  una vez tengamos determinada su estructura organizacional podemos dicernir cuales son las posibles areas auditable de la empresa</p>
+    <a href="index.html" id="volver">Volver</a>
+    <div class="main">
+        
+        <div class="left_logo">
+            <img class="logo" src="./src/img/empresa.png" alt="">
+        </div>
+        
+        
+        <div class="content">
+
+            <h1>¿Que vamos a auditar?</h1>
+            <p>
+                Hay que tener en cuenta que la auditoria tiene como sinonimo el <strong>Verificar y Evaluar</strong>, es decir durante nuestro proceso de auditoria vamos realizar un proceso verificación y evaluación de la empresa pero especificamente 
+            
+                <br> <br>
+                
+                <h2>¿que es lo que vamos a verificar y evaluar?</h2> 
+
+                <br> <br>
+
+                Si vemos la empresa como un un sistema, encontramos que esta tiene una estructura organizacional la cual contiene un conjunto de areas la cuales cumplen con funciones en especifico de la misma estas serian la areas auditables a las que se les aplicaran los procesos necesarios dentro de nuestra auditoria
+
+
+            
+            </p>
+
+            <h3>Las areas auditables</h3>
+            <p>
+                Para determinar cuales son las areas auditables, primero tenemos que visualizar la <a href="empresa.html">empresa</a> como un todo desde una perspectiva de sistemas, entendiendo <strong>¿que es lo que hace?</strong>  <strong>¿como lo hace?</strong>  y  una vez tengamos determinada su estructura organizacional podemos dicernir cuales son las posibles areas auditable de la empresa
+            </p>
+
+            <div class="button">
+                <a href="areas_auditables.html"><strong>Ejemplos de areas auditables</strong></a>
+            </div>
+
+        </div>
+        
+    </div>
+
 </body>
+
+<style>
+    body{
+
+    }
+
+    .left_logo{
+        max-width: 30%;
+        overflow: hidden;
+        background-color: #aeabad;
+        border-radius: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main{
+        background-color: #e7e5e6;
+        margin: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        font-size: larger;
+    }
+
+    .button{
+        background-color: rgb(147, 147, 255);
+        color: #000000;
+        font-size: large;
+        border-radius: 50px;
+        list-style: none;
+        text-decoration: none;
+        width: 30%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button a{
+        text-decoration: none; /* Quita la subrayado predeterminado */
+        color: inherit; 
+    }
+</style>
+
 </html>

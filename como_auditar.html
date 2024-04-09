@@ -6,7 +6,90 @@
     <title>Document</title>
 </head>
 <body>
+
     <a href="index.html" id="volver">Volver</a>
-    
+    <div class="main">
+        
+        <div class="left_logo">
+            <img class="logo" src="./src/img/auditar.png" alt="">
+        </div>
+        
+        
+        <div class="content">
+            <h1>¿Como vamos a auditar?</h1>
+            <p>
+                Una vez hayamos determinado cuales son las <a href="areas_auditables.html" target="_blank" >areas auditables</a> y junto con ella los objetos auditables tenemos que hacerno la pregunta ¿como auditaremos?, para eso usaremos las diferentes herramientas que nos proveen las <a href="metodologias.html">metodologias de auditoria</a>, a continuacion entran conceptos importantes
+                
+                <ul>
+                    <li>Politicas</li>
+                    <li>Teoria de riegos</li>
+                    <li>Teoria de procesos</li>
+
+                </ul>
+            </p>
+        </div>
+        
+    </div>
+
 </body>
+
+<style>
+    body{
+
+    }
+
+    .left_logo{
+        max-width: 30%;
+        overflow: hidden;
+        background-color: #aeabad;
+        border-radius: 20px;
+    }
+
+    .logo {
+        align-self: center;
+        width: 100%;
+    }
+
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main{
+        background-color: #e7e5e6;
+        margin: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: larger;
+    }
+
+    .button{
+        background-color: rgb(147, 147, 255);
+        color: #000000;
+        font-size: large;
+        border-radius: 50px;
+        list-style: none;
+        text-decoration: none;
+        width: 30%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button a{
+        text-decoration: none; /* Quita la subrayado predeterminado */
+        color: inherit; 
+    }
+</style>
+
 </html>

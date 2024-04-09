@@ -5,33 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas de Clase (Auditoria)</title>
 </head>
-<body>
-    <dl>
+
+<body>  
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="biografias.html">Biografias</a></li>
+                    <li><a href="#">Mas</a></li>
+                </ul>
+            </nav>
+            
+            <style>
+                nav ul{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    background-color: black;
+                    color: white;
+                }
+            
+                nav li{ 
+                    margin: 10px;
+                    list-style: none;
+                }
+            
+                nav a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+            </style>
+        </div>
+        
         <div class="item">
-            <dt><a href="que_vamos_auditar.html">¿Que vamos a auditar?</a></dt>
-            <dd>Que es lo que vamos a auditar dentro de una empresa</dd>
+            <a href="que_vamos_auditar.html">
+                
+                <div id="content">
+                    <h2>¿Que vamos a auditar?</h2>
+                    Que es lo que vamos a auditar dentro de una empresa
+                </div>
+                
+                <img src="./src/img/empresa.png" alt="">
+            </a>
         </div>
 
         <div class="item">
-            <dt><a href="como_auditar.html">¿Como vamos a auditar?</a></dt>
-            <dd>Como y que es lo que vamos a tener en cuanta a auditar dentro de una empresa</dd>
+            <a href="como_auditar.html">
+                <div id="content">
+                    <h2>¿Como vamos a auditar?</h2> <br>
+                    Como y que es lo que vamos a tener en cuanta a auditar dentro de una empresa
+                </div>
+                <img src="./src/img/auditar.png" alt="">
+            </a>
         </div>
 
         <div class="item">
-            <dt><a href="como_presentar_auditoria.html">¿Como vamos a presentar o plantear la auditoria?</a></dt>
-            <dd>Como se debe de presentar la auditoria a una empresa</dd>
+            <a href="como_presentar_auditoria.html"> <br>
+                <div id="content">
+                    <h2>¿Como vamos a presentar o plantear la auditoria?</h2>
+                    Como se debe de presentar la auditoria a una empresa    
+                </div>
+                <img src="./src/img/informe-seo.png" alt="">
+            </a>
         </div>
-    </dl>
+
+        <div class="item">
+            <a href="metodologias.html">
+                <div id="content">
+                    <h2>Metodologias de auditoria</h2> <br>
+                    A partir de estas metodologias podemos obtener partes o componentes de como aplicar la auditoria y puntos base para la ejecución de nuestra autoria
+                </div>
+                <img src="./src/img/solucion.png" alt="">
+            </a>
+        </div>
 </body>
 </html>
 
 
 <style>
+    #content{
+        flex-direction: column;
+    }
+    .item img{
+        padding: 10px;
+        align-self: self-end;
+    }
     body{
         background-color: rgb(211, 214, 217);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .item{
-        margin: 50px;
+        margin: 20px;
         padding: 20px;
         border-radius: 15px;
         -webkit-box-shadow: -1px 3px 31px 4px rgba(0,0,0,0.21);
@@ -39,7 +106,17 @@
         box-shadow: -1px 3px 31px 4px rgba(0,0,0,0.21);
 
         background-color: aliceblue;
+        min-width: 40%;
+        max-width: 40%;
     }
+
+    .item a{
+        text-decoration: none; /* Quita la subrayado predeterminado */
+        color: inherit; 
+        display: flex;
+        flex-direction: row;
+    }
+
     dd{
         margin-left: 0;
     }
@@ -47,5 +124,11 @@
         font-size: x-large;
         list-style: none;
         text-decoration: none;
+    }
+    img {
+        max-width: 100px;
+    }
+    .menu{
+        width: 100%;
     }
 </style>
